@@ -66,26 +66,26 @@ export storage=local-lvm
 ## Ubuntu
 #22.04 (Jammy Jellyfish)
 wget "https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img"
-create_template 911 "Template-Ubuntu-22-04" "ubuntu-22.04-server-cloudimg-amd64.img" 
+create_template 999 "Template-Ubuntu-22-04" "ubuntu-22.04-server-cloudimg-amd64.img" 
 #23.04 (Lunar Lobster) - daily builds
 wget "https://cloud-images.ubuntu.com/lunar/current/lunar-server-cloudimg-amd64.img"
-create_template 912 "Template-Ubuntu-23-04-daily" "lunar-server-cloudimg-amd64.img"
+create_template 998 "Template-Ubuntu-23-04-daily" "lunar-server-cloudimg-amd64.img"
 
 ## Fedora 37
 #Image is compressed, so need to uncompress first
 wget https://download.fedoraproject.org/pub/fedora/linux/releases/37/Cloud/x86_64/images/Fedora-Cloud-Base-37-1.7.x86_64.raw.xz
 xz -d -v Fedora-Cloud-Base-37-1.7.x86_64.raw.xz
-create_template 920 "Template-Fedora-37" "Fedora-Cloud-Base-37-1.7.x86_64.raw"
+create_template 997 "Template-Fedora-37" "Fedora-Cloud-Base-37-1.7.x86_64.raw"
 
 ## CentOS Stream
 #Stream 8
 wget https://cloud.centos.org/centos/8-stream/x86_64/images/CentOS-Stream-GenericCloud-8-20220913.0.x86_64.qcow2
-create_template 930 "Template-centos-8-stream" "CentOS-Stream-GenericCloud-8-20220913.0.x86_64.qcow2"
+create_template 996 "Template-centos-8-stream" "CentOS-Stream-GenericCloud-8-20220913.0.x86_64.qcow2"
 #Stream 9 (daily) - they don't have a 'latest' link?
 wget https://cloud.centos.org/centos/9-stream/x86_64/images/CentOS-Stream-GenericCloud-9-20230123.0.x86_64.qcow2
-create_template 931 "Template-CentOS-9-Stream-daily" "CentOS-Stream-GenericCloud-9-20230123.0.x86_64.qcow2"
+create_template 995 "Template-CentOS-9-Stream-daily" "CentOS-Stream-GenericCloud-9-20230123.0.x86_64.qcow2"
 
 ## Rocky Linux
 #Stream 8
 wget https://download.rockylinux.org/pub/rocky/8/images/x86_64/Rocky-8-OCP.latest.x86_64.qcow2
-create_template 930 "Template-Rocky-Linux" "CentOS-Stream-GenericCloud-8-20220913.0.x86_64.qcow2"
+create_template 994 "Template-Rocky-Linux" "Rocky-8-OCP.latest.x86_64.qcow2"
