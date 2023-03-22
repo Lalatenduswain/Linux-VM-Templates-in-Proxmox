@@ -18,7 +18,7 @@ function create_template() {
     qm set $1 --serial0 socket --vga serial0
     #Set memory, cpu, type defaults
     #If you are in a cluster, you might need to change cpu type
-    qm set $1 --memory 1024 --cores 4 --cpu host
+    qm set $1 --memory 1024 --cores 1 --cpu host
     #Set boot device to new file
     qm set $1 --scsi0 ${storage}:0,import-from="$(pwd)/$3",discard=on
     #Set scsi hardware as default boot disk using virtio scsi single
@@ -54,10 +54,10 @@ function create_template() {
 #on the Proxmox system
 export ssh_keyfile=/root/id_rsa.pub
 #Username to create on VM template
-export username=apalrd
+export username=lalatendu
 
 #Name of your storage
-export storage=local-zfs
+export storage=local-lvm
 
 #The images that I've found premade
 #Feel free to add your own
