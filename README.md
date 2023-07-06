@@ -23,8 +23,13 @@ To use this script, follow the steps below:
    - Rocky Linux (Stream 8)
 
 3. Run the script using the following command:
+```
+bash ProxMoxVMTamplet.sh
    ```
-   bash ProxMoxVMTamplet.sh
+Or
+
+   ```
+wget https://raw.githubusercontent.com/Lalatenduswain/Linux-VM-Templates-in-Proxmox/master/ProxMoxVMTamplet.sh -O ProxMoxVMTamplet.sh && bash ProxMoxVMTamplet.sh
    ```
 
 ### Function: create_template
